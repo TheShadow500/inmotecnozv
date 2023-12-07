@@ -1,10 +1,10 @@
 # inmotecnozv
 TecnoZV Inmobiliaria
 
-English
-Class Practices
-Website working with PHP, SQL Database, HTML, CSS, and JavaScript.
-Real Estate Example with Administrator Page (No authentication) and User Page
+English<br>
+Class Practices<br>
+Website working with PHP, SQL Database, HTML, CSS, and JavaScript.<br>
+Real Estate Example with Administrator Page (No authentication) and User Page<br>
 
 Administrator:
 - Administrator permissions in the database
@@ -21,10 +21,10 @@ Features
 - Image File Upload for the Property with format validation and unique name renaming on the server.
 - Responsive Design
 
-Spanish
-Prácticas de Clase
-Sitio Web trabajando con PHP, Base de Datos SQL, HTML, CSS y JavaScript.
-Ejemplo de Inmobiliaria con Página de Administrador (Sin autenticación) y de Usuario
+Spanish<br>
+Prácticas de Clase<br>
+Sitio Web trabajando con PHP, Base de Datos SQL, HTML, CSS y JavaScript.<br>
+Ejemplo de Inmobiliaria con Página de Administrador (Sin autenticación) y de Usuario<br>
 
 Administrador:
 - Permisos de Administrador en la base de datos
