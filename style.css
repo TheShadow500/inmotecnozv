@@ -1,0 +1,523 @@
+/* BASE
+----------------------------------------- */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #dadada;
+}
+
+
+/* ESTRUCTURA
+----------------------------------------- */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logotipo{
+    width: 100%;
+    text-align: center;
+}
+
+.logotipo img{
+    width: 78%;
+}
+
+.main{
+    border: 2px solid;
+    border-radius: 0.7rem;
+    border-color: #989898;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 1rem;
+    background-color: #c9c9c9;
+}
+
+
+/* TITULOS
+----------------------------------------- */
+
+.seccion-titulo{
+    border-bottom: 1px solid #989898;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(1.5rem, 1.3333rem + 0.5556vw, 2rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+.seccion-subtitulo{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(1rem, 0.8333rem + 0.5556vw, 1.5rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+.seccion{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(1.25rem, 1.0833rem + 0.5556vw, 1.75rem);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* FORMULARIO ADMINISTRADOR
+----------------------------------------- */
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 45%;
+}
+
+.formulario-linea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.campo{
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.campo-texto{
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.campo-texto-file{
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.campo-texto input{
+    outline: none;
+    border: 2px solid #989898;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #dadada;
+}
+
+.campo-texto input:hover{
+    border-color: #000000;
+}
+
+.campo-texto input:active{
+    border-color: #000000;
+}
+
+.campo-texto input:focus{
+    border-color: #000000;
+}
+
+.campo-texto-file input[type="file"]{
+    display: none;
+}
+
+.custom-input-file{
+    border: 2px solid #989898;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 7px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.custom-input-file:hover{
+    border-color: #000000;
+}
+
+.campo-texto select{
+    outline: none;
+    border: 2px solid #989898;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    background-color: #dadada;
+}
+
+.campo-texto select:hover{
+    border-color: #000000;
+}
+
+.campo-texto select:active{
+    border-color: #000000;
+}
+
+.campo-texto select:focus{
+    border-color: #000000;
+}
+
+.campoboton{
+    text-align: center;
+}
+
+@media (max-width: 950px){
+    .formulario{
+        width: 50%;
+    }
+
+    .formulario-linea{
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    .campo{
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 8px;
+        padding-bottom: 2px;
+        width: 100%;
+    }
+
+    .campo-texto{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .campo-texto input{
+        text-align: center;
+    }
+
+    .campo-texto-file{
+        width: 100%;
+    }
+}
+
+
+/* BUSCADOR
+----------------------------------------- */
+
+.busqueda{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 20px;
+}
+
+.busqueda-linea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.busqueda-campo{
+    width: 90%;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+.busqueda-campo-texto{
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.busqueda-campo-texto input{
+    outline: none;
+    border: 2px solid #989898;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #dadada;
+}
+
+.busqueda-campo-texto input:hover{
+    border-color: #000000;
+}
+
+.busqueda-campo-texto input:active{
+    border-color: #000000;
+}
+
+.busqueda-campo-texto input:focus{
+    border-color: #000000;
+}
+
+.busqueda-campoboton input{
+    outline: none;
+    border: 2px solid #989898;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #dadada;
+}
+
+
+/* LISTADO INMUEBLES
+----------------------------------------- */
+.listado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 30px;
+}
+
+.listado-linea{
+    border-top: 1px solid #989898;
+    border-left: 1px solid #989898;
+    border-right: 1px solid #989898;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+.listado-texto-titulo{
+    width: 50%;
+    margin-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: clamp(0.875rem, 0.7917rem + 0.2778vw, 1.125rem);
+}
+
+.listado-texto{
+    width: 50%;
+    margin-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(0.75rem, 0.6667rem + 0.2778vw, 1rem);
+    text-align: right;
+}
+
+.listado-imagen{
+    box-sizing: border-box;
+}
+
+.listado-imagen img{
+    width: 100%;
+}
+
+@media (max-width: 950px){
+    .listado{
+        width: 90%;
+    }
+
+    .listado-linea{
+        flex-direction: column;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+
+    .listado-texto-titulo{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .listado-texto{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* LISTADO INMUEBLES BORRAR
+----------------------------------------- */
+.contenedor-borrar{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(0.75rem, 0.6667rem + 0.2778vw, 1rem);
+    box-sizing: border-box;
+}
+
+.listado-linea-borrar{
+    border-bottom: 1px solid #989898;
+    border-top: 1px solid #989898;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.listado-linea-imagen{
+    border-bottom: 1px solid #989898;
+    border-top: 1px solid #989898;
+    display: flex;
+    flex: 3;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.listado-linea-imagen img{
+    border: 1px solid;
+    border-radius: 0.3rem;
+    width: 100%;
+    min-width: 40px;
+    box-sizing: border-box;
+}
+
+.listado-linea-ciudades{
+    border-bottom: 1px solid #989898;
+    border-top: 1px solid #989898;
+    display: flex;
+    flex: 4;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.listado-linea-botoneliminar{
+    display: flex;
+    border-bottom: 1px solid #989898;
+    border-top: 1px solid #989898;
+    align-items: center;
+}
+
+.listado-linea-botoneliminar img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* INTERFAZ
+----------------------------------------- */
+
+.botones{
+    outline: none;
+    border: 1px solid #989898;
+    border-radius: 0.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    width: 10rem;
+    margin: 10px;
+    padding: 0.7rem;
+}
+
+.botones:focus{
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.botones:hover{
+    border: 1px solid;
+    border-color: #000000;
+    background-color: #989898;
+}
+
+.botones:active{
+    background-color: #dadada;
+}
+
+.boton-eliminar{
+    outline: none;
+    border: 2px solid #989898;
+    background-color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: normal;
+    margin: 3px;
+    padding: 0.3rem;
+}
+
+.boton-eliminar:focus{
+    border: 2px solid;
+    border-color: #000000;
+}
+
+.boton-eliminar:hover{
+    border: 2px solid;
+    border-color: #000000;
+    background-color: #989898;
+}
+
+.boton-eliminar:active{
+    background-color: #dadada;
+}
+
+.boton-modificar{
+    outline: none;
+    border: 2px solid #989898;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: normal;
+    margin: 3px;
+    padding: 0.3rem;
+}
+
+.boton-modificar:focus{
+    border: 2px solid;
+    border-color: #000000;
+}
+
+.boton-modificar:hover{
+    border: 2px solid;
+    border-color: #000000;
+    background-color: #989898;
+}
+
+.boton-modificar:active{
+    background-color: #dadada;
+}
+
+.footer{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(0.6875rem, 0.5833rem + 0.3472vw, 1rem);
+    font-weight: bold;
+    padding: 0.5rem;
+}
